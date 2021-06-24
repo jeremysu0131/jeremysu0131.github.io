@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /about/
+Disallow: /archives/
+Disallow: /categories/
+Disallow: /search/
+Disallow: /tags/ 
+Disallow: /vendors/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: https://jeremysu0131.github.io/sitemap.xml

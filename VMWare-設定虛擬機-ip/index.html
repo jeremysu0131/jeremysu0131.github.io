@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="manifest" href="/images/manifest.json">
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jeremysu0131.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="確定虛擬機網路設定這邊要先確定虛擬機的網路設定是 NAT 。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[VMWare] 設定虛擬機 ip">
+<meta property="og:url" content="https://jeremysu0131.github.io/VMWare-%E8%A8%AD%E5%AE%9A%E8%99%9B%E6%93%AC%E6%A9%9F-ip/index.html">
+<meta property="og:site_name" content="Nomi Su@Coding">
+<meta property="og:description" content="確定虛擬機網路設定這邊要先確定虛擬機的網路設定是 NAT 。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jeremysu0131.github.io/.io//vm.png">
+<meta property="og:image" content="https://jeremysu0131.github.io/.io//vmnet8.png">
+<meta property="og:image" content="https://jeremysu0131.github.io/.io//nmtui.png">
+<meta property="article:published_time" content="2018-02-07T02:23:15.000Z">
+<meta property="article:modified_time" content="2021-06-24T03:55:08.186Z">
+<meta property="article:author" content="Jeremy Su">
+<meta property="article:tag" content="VMWare">
+<meta property="article:tag" content="net">
+<meta property="article:tag" content="ip">
+<meta property="article:tag" content="CentOS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jeremysu0131.github.io/.io//vm.png">
+
+<link rel="canonical" href="https://jeremysu0131.github.io/VMWare-%E8%A8%AD%E5%AE%9A%E8%99%9B%E6%93%AC%E6%A9%9F-ip/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>[VMWare] 設定虛擬機 ip | Nomi Su@Coding</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Nomi Su@Coding" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Nomi Su@Coding</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Record all of the coding problem</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://jeremysu0131.github.io/VMWare-%E8%A8%AD%E5%AE%9A%E8%99%9B%E6%93%AC%E6%A9%9F-ip/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jeremy Su">
+      <meta itemprop="description" content="Full Stack Developer">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nomi Su@Coding">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          [VMWare] 設定虛擬機 ip
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-02-07 10:23:15" itemprop="dateCreated datePublished" datetime="2018-02-07T10:23:15+08:00">2018-02-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-06-24 11:55:08" itemprop="dateModified" datetime="2021-06-24T11:55:08+08:00">2021-06-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tool/" itemprop="url" rel="index"><span itemprop="name">Tool</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="確定虛擬機網路設定"><a href="#確定虛擬機網路設定" class="headerlink" title="確定虛擬機網路設定"></a>確定虛擬機網路設定</h2><p>這邊要先確定虛擬機的網路設定是 NAT 。</p>
+<span id="more"></span>
+
+<p><img src="/.io//vm.png" alt="vm net setting"></p>
+<h2 id="VMnet8"><a href="#VMnet8" class="headerlink" title="VMnet8"></a>VMnet8</h2><p>到網際網路中找到 VMnet8 ，看看是否有啟動，另外進入設定 IP ，這裡的 IP 位置就是未來虛擬機中的網段。</p>
+<p><img src="/.io//vmnet8.png" alt="vm net 8 setting"></p>
+<h2 id="到虛擬機中的作業系統設定-ip"><a href="#到虛擬機中的作業系統設定-ip" class="headerlink" title="到虛擬機中的作業系統設定 ip"></a>到虛擬機中的作業系統設定 ip</h2><p>這邊以 CentOS 7 為例：</p>
+<ol>
+<li>檢查 Network Manager 是否啟動</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status NetworkManager.service</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>檢查網卡，綠色顯示的為使用中的，我們要設定的就是這張</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmcli dev status</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>進入 nmtui 設定網路，若沒有則安裝 <code>yum install NetworkManager-tui</code></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nmtui 你的網路卡名稱</span><br></pre></td></tr></table></figure>
+
+<p>將 <code>IPv4 CONFIGURATION</code> 的 <code>Automatic</code> 改成 <code>Manual</code> ，然後按下旁邊的 <code>Show</code> ，即可設定固定 ip ，記得網段要跟先前 VMnet8 中設定的一樣。<br><img src="/.io//nmtui.png" alt="vm net setting"></p>
+<ol start="4">
+<li>重新啟動網路</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart network.service</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>檢查設定是否生效</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip add</span><br></pre></td></tr></table></figure>
+
+<h3 id="參考來源"><a href="#參考來源" class="headerlink" title="參考來源"></a>參考來源</h3><blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.cnblogs.com/objectorl/archive/2012/09/27/vmware-ubuntu-nat-static-ip-settings.html">VMWare 虚拟机下为 Ubuntu 12.04.1 配置静态 IP（NAT 方式）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.phpini.com/linux/rhel-centos-7-setup-static-ip">RHEL / CentOS 7 設定網路固定 IP</a></li>
+</ul>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/VMWare/" rel="tag"># VMWare</a>
+              <a href="/tags/net/" rel="tag"># net</a>
+              <a href="/tags/ip/" rel="tag"># ip</a>
+              <a href="/tags/CentOS/" rel="tag"># CentOS</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Vue-js-Vuex-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-20-Cheat-Sheet-%E8%88%87%E7%B5%90%E8%AA%9E/" rel="prev" title="[Vue.js] Vuex 學習筆記 (20) - Cheat Sheet 與結語">
+      <i class="fa fa-chevron-left"></i> [Vue.js] Vuex 學習筆記 (20) - Cheat Sheet 與結語
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Node-js-MySQL-with-Promise-%E8%A8%AD%E5%AE%9A/" rel="next" title="[Node.js] MySQL with Promise 處理非同步問題">
+      [Node.js] MySQL with Promise 處理非同步問題 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A2%BA%E5%AE%9A%E8%99%9B%E6%93%AC%E6%A9%9F%E7%B6%B2%E8%B7%AF%E8%A8%AD%E5%AE%9A"><span class="nav-number">1.</span> <span class="nav-text">確定虛擬機網路設定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VMnet8"><span class="nav-number">2.</span> <span class="nav-text">VMnet8</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%B0%E8%99%9B%E6%93%AC%E6%A9%9F%E4%B8%AD%E7%9A%84%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E8%A8%AD%E5%AE%9A-ip"><span class="nav-number">3.</span> <span class="nav-text">到虛擬機中的作業系統設定 ip</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E4%BE%86%E6%BA%90"><span class="nav-number">3.1.</span> <span class="nav-text">參考來源</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jeremy Su</p>
+  <div class="site-description" itemprop="description">Full Stack Developer</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">42</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">85</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/jeremysu0131" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/nomi_su" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2017 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jeremy Su</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
