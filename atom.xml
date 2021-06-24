@@ -203,9 +203,9 @@
     
     <category term="Docker" scheme="https://jeremysu0131.github.io/tags/Docker/"/>
     
-    <category term="Node.js" scheme="https://jeremysu0131.github.io/tags/Node-js/"/>
-    
     <category term="VS Code" scheme="https://jeremysu0131.github.io/tags/VS-Code/"/>
+    
+    <category term="Node.js" scheme="https://jeremysu0131.github.io/tags/Node-js/"/>
     
   </entry>
   
