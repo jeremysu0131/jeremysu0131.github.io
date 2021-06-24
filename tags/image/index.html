@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -10,10 +12,10 @@
   <link rel="manifest" href="/images/manifest.json">
   <meta name="msapplication-config" content="/images/browserconfig.xml">
 
+<link rel="stylesheet" href="/css/main.css">
 
 
-
-
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -75,13 +77,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Nomi Su@Coding" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');</script></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar">
@@ -177,11 +179,13 @@
       <span class="collection-header">2019</span>
     </div>
 
-  <article itemscope="" itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
       <div class="post-meta">
-        <time itemprop="dateCreated" datetime="2019-01-23T13:38:44+08:00" content="2019-01-23">
+        <time itemprop="dateCreated"
+              datetime="2019-01-23T13:38:44+08:00"
+              content="2019-01-23">
           01-23
         </time>
       </div>
@@ -257,7 +261,7 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Jeremy Su</p>
   <div class="site-description" itemprop="description">Full Stack Developer</div>
 </div>
@@ -286,10 +290,10 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/jeremysu0131" title="GitHub → https://github.com/jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/jeremysu0131" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://instagram.com/nomi_su" title="Instagram → https://instagram.com/nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+        <a href="https://instagram.com/nomi_su" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
       </span>
   </div>
 
@@ -313,14 +317,14 @@
 
 <div class="copyright">
   
-  © 2017 – 
+  &copy; 2017 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jeremy Su</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
   </div>
 
         
@@ -408,44 +412,40 @@
   </div>
 
   
-  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
 
 
+<script src="/js/schemes/muse.js"></script>
 
 
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
+<script src="/js/next-boot.js"></script>
 
 
 
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
+  
 
-
-
-
-<script src="/bundle.js"></script><script>
+<script>
   function loadCount() {
     var d = document, s = d.createElement('script');
     s.src = 'https://nomicoding.disqus.com/count.js';
@@ -454,4 +454,7 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
-</script></body></html>
+</script>
+
+</body>
+</html>

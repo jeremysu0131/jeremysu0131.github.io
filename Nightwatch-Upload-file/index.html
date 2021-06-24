@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -10,10 +12,10 @@
   <link rel="manifest" href="/images/manifest.json">
   <meta name="msapplication-config" content="/images/browserconfig.xml">
 
+<link rel="stylesheet" href="/css/main.css">
 
 
-
-
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -80,13 +82,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Nomi Su@Coding" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');</script></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar">
@@ -169,16 +171,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://jeremysu0131.github.io/Nightwatch-Upload-file/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Jeremy Su">
       <meta itemprop="description" content="Full Stack Developer">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Nomi Su@Coding">
     </span>
       <header class="post-header">
@@ -207,7 +209,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Nightwatch/" itemprop="url" rel="index"><span itemprop="name">Nightwatch</span></a>
                 </span>
             </span>
@@ -247,7 +249,7 @@
         <h1 id="Nightwatch-上傳"><a href="#Nightwatch-上傳" class="headerlink" title="Nightwatch 上傳"></a>Nightwatch 上傳</h1><p>最近在學習如何使用 Nightwatch 來做 E2E 測試，不過發現到上傳功能並沒有出現在官方網站，這邊紀錄一下上傳的方式</p>
 <span id="more"></span>
 
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"Upload File"</span>: <span class="function"><span class="params">browser</span> =&gt;</span> {</span><br><span class="line">    browser</span><br><span class="line">      .setValue(</span><br><span class="line">        <span class="string">"input[type=file]"</span>,</span><br><span class="line">        <span class="built_in">require</span>(<span class="string">"path"</span>).resolve(__dirname + <span class="string">"/test.jpg"</span>)</span><br><span class="line">      )</span><br><span class="line">  },</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;Upload File&quot;</span>: <span class="function"><span class="params">browser</span> =&gt;</span> &#123;</span><br><span class="line">    browser</span><br><span class="line">      .setValue(</span><br><span class="line">        <span class="string">&quot;input[type=file]&quot;</span>,</span><br><span class="line">        <span class="built_in">require</span>(<span class="string">&quot;path&quot;</span>).resolve(__dirname + <span class="string">&quot;/test.jpg&quot;</span>)</span><br><span class="line">      )</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
 
 <p>其實上傳方式很簡單，就像輸入文字框一樣，只不過這邊把輸入的內容改為檔案的路徑，這樣就可以成功上傳了</p>
 
@@ -347,7 +349,7 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Jeremy Su</p>
   <div class="site-description" itemprop="description">Full Stack Developer</div>
 </div>
@@ -376,10 +378,10 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/jeremysu0131" title="GitHub → https://github.com/jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/jeremysu0131" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://instagram.com/nomi_su" title="Instagram → https://instagram.com/nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+        <a href="https://instagram.com/nomi_su" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
       </span>
   </div>
 
@@ -403,14 +405,14 @@
 
 <div class="copyright">
   
-  © 2017 – 
+  &copy; 2017 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jeremy Su</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
   </div>
 
         
@@ -498,45 +500,40 @@
   </div>
 
   
-  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
 
 
+<script src="/js/schemes/muse.js"></script>
 
 
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
+<script src="/js/next-boot.js"></script>
 
 
 
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
+  
 
-
-
-
-
-<script src="/bundle.js"></script><script>
+<script>
   function loadCount() {
     var d = document, s = d.createElement('script');
     s.src = 'https://nomicoding.disqus.com/count.js';
@@ -545,8 +542,8 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
-;
-
+</script>
+<script>
   var disqus_config = function() {
     this.page.url = "https://jeremysu0131.github.io/Nightwatch-Upload-file/";
     this.page.identifier = "Nightwatch-Upload-file/";
@@ -565,4 +562,7 @@
       (d.head || d.body).appendChild(s);
     }
   });
-</script></body></html>
+</script>
+
+</body>
+</html>

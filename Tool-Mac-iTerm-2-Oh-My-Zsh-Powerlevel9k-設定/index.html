@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -10,10 +12,10 @@
   <link rel="manifest" href="/images/manifest.json">
   <meta name="msapplication-config" content="/images/browserconfig.xml">
 
+<link rel="stylesheet" href="/css/main.css">
 
 
-
-
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -85,13 +87,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Nomi Su@Coding" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');</script></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar">
@@ -174,16 +176,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://jeremysu0131.github.io/Tool-Mac-iTerm-2-Oh-My-Zsh-Powerlevel9k-%E8%A8%AD%E5%AE%9A/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Jeremy Su">
       <meta itemprop="description" content="Full Stack Developer">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Nomi Su@Coding">
     </span>
       <header class="post-header">
@@ -212,7 +214,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a>
                 </span>
             </span>
@@ -251,36 +253,36 @@
       
         <h1 id="基本使用"><a href="#基本使用" class="headerlink" title=" 基本使用"></a> 基本使用</h1><h2 id="安裝-iTerm-2"><a href="#安裝-iTerm-2" class="headerlink" title="安裝 iTerm 2"></a>安裝 iTerm 2</h2><span id="more"></span>
 
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install iterm2</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install iterm2</span><br></pre></td></tr></table></figure>
 
 <p>安裝完成後打開 iTerm 繼續執行以下指令</p>
-<h2 id="安裝-zsh"><a href="#安裝-zsh" class="headerlink" title="安裝 zsh"></a>安裝 zsh</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install zsh zsh-completions</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="安裝-zsh"><a href="#安裝-zsh" class="headerlink" title="安裝 zsh"></a>安裝 zsh</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install zsh zsh-completions</span><br></pre></td></tr></table></figure>
 
-<h2 id="安裝-Git"><a href="#安裝-Git" class="headerlink" title="安裝 Git"></a>安裝 Git</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="安裝-Git"><a href="#安裝-Git" class="headerlink" title="安裝 Git"></a>安裝 Git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
 
-<h2 id="安裝-Oh-My-Zsh"><a href="#安裝-Oh-My-Zsh" class="headerlink" title="安裝 Oh My Zsh"></a>安裝 Oh My Zsh</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="subst">$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="安裝-Oh-My-Zsh"><a href="#安裝-Oh-My-Zsh" class="headerlink" title="安裝 Oh My Zsh"></a>安裝 Oh My Zsh</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="安裝字體-Nerd-Fonts"><a href="#安裝字體-Nerd-Fonts" class="headerlink" title="安裝字體 Nerd-Fonts"></a>安裝字體 Nerd-Fonts</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew tap caskroom/fonts <span class="comment">#字體安裝軟體，只需執行一次以後就可以去下載其他字體</span></span><br><span class="line">brew cask install font-hack-nerd-font <span class="comment"># 安裝字體</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="安裝字體-Nerd-Fonts"><a href="#安裝字體-Nerd-Fonts" class="headerlink" title="安裝字體 Nerd-Fonts"></a>安裝字體 Nerd-Fonts</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew tap caskroom/fonts <span class="comment">#字體安裝軟體，只需執行一次以後就可以去下載其他字體</span></span><br><span class="line">brew cask install font-hack-nerd-font <span class="comment"># 安裝字體</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="iTerm-設定字體"><a href="#iTerm-設定字體" class="headerlink" title="iTerm 設定字體"></a>iTerm 設定字體</h2><p>進入 iTerm 的設定 &gt; Profiles &gt; Text &gt; Change Font &gt;  選擇 <code>Knack Nerd Font</code> 字體 Regular 大小 18pt，完成後重新啟動 iTerm ，設定完成。</p>
 <p><img src="https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png" alt="oh-my-zsh"></p>
 <h1 id="進階使用"><a href="#進階使用" class="headerlink" title="進階使用"></a>進階使用</h1><p>如果想要讓終端機有更多功能，我們可以使用 Powerlevel9K 來使其更豐富</p>
-<h2 id="安裝-Powerlevel9K"><a href="#安裝-Powerlevel9K" class="headerlink" title="安裝 Powerlevel9K"></a>安裝 Powerlevel9K</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="安裝-Powerlevel9K"><a href="#安裝-Powerlevel9K" class="headerlink" title="安裝 Powerlevel9K"></a>安裝 Powerlevel9K</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k</span><br></pre></td></tr></table></figure>
 
 <h3 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h3><p>執行完上面指令後可以在 $HOME 下找到 <code>.zshrc</code>，進入設定：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure>
 
 <ol>
-<li>找到 <code>ZSH_THEME="robbyrussell"</code> ，將它改為 <code>ZSH_THEME="powerlevel9k/powerlevel9k"</code>，啟用 Powerlevel9K 主題</li>
+<li>找到 <code>ZSH_THEME=&quot;robbyrussell&quot;</code> ，將它改為 <code>ZSH_THEME=&quot;powerlevel9k/powerlevel9k&quot;</code>，啟用 Powerlevel9K 主題</li>
 <li>接下來貼上下面程式碼來做調整：</li>
 </ol>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POWERLEVEL9K_MODE=<span class="string">'nerdfont-complete'</span> <span class="comment"># 調整字體，必須設定</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POWERLEVEL9K_MODE=<span class="string">&#x27;nerdfont-complete&#x27;</span> <span class="comment"># 調整字體，必須設定</span></span><br></pre></td></tr></table></figure>
 
 <p>下面是我自己更改的設定，有需要可以自行複製貼上</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">POWERLEVEL9K_ALWAYS_SHOW_USER=<span class="literal">true</span></span><br><span class="line">POWERLEVEL9K_CONTEXT_TEMPLATE=<span class="string">"%n"</span></span><br><span class="line">POWERLEVEL9K_PROMPT_ON_NEWLINE=<span class="literal">true</span></span><br><span class="line">POWERLEVEL9K_RPROMPT_ON_NEWLINE=<span class="literal">true</span></span><br><span class="line">POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)</span><br><span class="line">POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)</span><br><span class="line">POWERLEVEL9K_STATUS_VERBOSE=<span class="literal">false</span></span><br><span class="line">POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=<span class="string">""</span></span><br><span class="line">POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=<span class="string">"%{%b%f%k%F{blue}%} %{%f%}"</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">POWERLEVEL9K_ALWAYS_SHOW_USER=<span class="literal">true</span></span><br><span class="line">POWERLEVEL9K_CONTEXT_TEMPLATE=<span class="string">&quot;%n&quot;</span></span><br><span class="line">POWERLEVEL9K_PROMPT_ON_NEWLINE=<span class="literal">true</span></span><br><span class="line">POWERLEVEL9K_RPROMPT_ON_NEWLINE=<span class="literal">true</span></span><br><span class="line">POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)</span><br><span class="line">POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)</span><br><span class="line">POWERLEVEL9K_STATUS_VERBOSE=<span class="literal">false</span></span><br><span class="line">POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=<span class="string">&quot;&quot;</span></span><br><span class="line">POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=<span class="string">&quot;%&#123;%b%f%k%F&#123;blue&#125;%&#125; %&#123;%f%&#125;&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>啟用新設定：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
 
 <p>執行完後會發現畫面會有所改變，檢查正常無誤就代表設定成功了。</p>
 <p><img src="/.io//snapshot.png" alt="powerlevel9k"></p>
@@ -386,7 +388,7 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Jeremy Su</p>
   <div class="site-description" itemprop="description">Full Stack Developer</div>
 </div>
@@ -415,10 +417,10 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/jeremysu0131" title="GitHub → https://github.com/jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/jeremysu0131" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://instagram.com/nomi_su" title="Instagram → https://instagram.com/nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+        <a href="https://instagram.com/nomi_su" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
       </span>
   </div>
 
@@ -442,14 +444,14 @@
 
 <div class="copyright">
   
-  © 2017 – 
+  &copy; 2017 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jeremy Su</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
   </div>
 
         
@@ -537,45 +539,40 @@
   </div>
 
   
-  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
 
 
+<script src="/js/schemes/muse.js"></script>
 
 
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
+<script src="/js/next-boot.js"></script>
 
 
 
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
+  
 
-
-
-
-
-<script src="/bundle.js"></script><script>
+<script>
   function loadCount() {
     var d = document, s = d.createElement('script');
     s.src = 'https://nomicoding.disqus.com/count.js';
@@ -584,8 +581,8 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
-;
-
+</script>
+<script>
   var disqus_config = function() {
     this.page.url = "https://jeremysu0131.github.io/Tool-Mac-iTerm-2-Oh-My-Zsh-Powerlevel9k-%E8%A8%AD%E5%AE%9A/";
     this.page.identifier = "Tool-Mac-iTerm-2-Oh-My-Zsh-Powerlevel9k-設定/";
@@ -604,4 +601,7 @@
       (d.head || d.body).appendChild(s);
     }
   });
-</script></body></html>
+</script>
+
+</body>
+</html>

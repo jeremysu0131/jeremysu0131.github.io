@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -10,10 +12,10 @@
   <link rel="manifest" href="/images/manifest.json">
   <meta name="msapplication-config" content="/images/browserconfig.xml">
 
+<link rel="stylesheet" href="/css/main.css">
 
 
-
-
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -82,13 +84,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Nomi Su@Coding" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');</script></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar">
@@ -171,16 +173,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://jeremysu0131.github.io/Vue-js-Vuex-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-11-%E6%8F%92%E4%BB%B6/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Jeremy Su">
       <meta itemprop="description" content="Full Stack Developer">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Nomi Su@Coding">
     </span>
       <header class="post-header">
@@ -209,7 +211,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/vuejs/" itemprop="url" rel="index"><span itemprop="name">Vue.js</span></a>
                 </span>
             </span>
@@ -250,16 +252,16 @@
 <span id="more"></span>
 
 <p>使用插件的方式：</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store({</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">plugins</span>: [myPlugin],</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">plugins</span>: [myPlugin],</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <p>插件的內容：</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> myPlugin = <span class="function"><span class="params">store</span> =&gt;</span> {</span><br><span class="line">  <span class="comment">// 當 store 初始化後調用</span></span><br><span class="line">  store.subscribe(<span class="function">(<span class="params">mutation, state</span>) =&gt;</span> {</span><br><span class="line">    <span class="comment">// 每次 mutation 之後調用</span></span><br><span class="line">    <span class="comment">// mutation 的格式為 { type, payload }</span></span><br><span class="line">  });</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> myPlugin = <span class="function"><span class="params">store</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 當 store 初始化後調用</span></span><br><span class="line">  store.subscribe(<span class="function">(<span class="params">mutation, state</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 每次 mutation 之後調用</span></span><br><span class="line">    <span class="comment">// mutation 的格式為 &#123; type, payload &#125;</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <h2 id="在插件內提交-mutation"><a href="#在插件內提交-mutation" class="headerlink" title="在插件內提交 mutation"></a>在插件內提交 mutation</h2><p>Plugin 與 Component 一樣不允許直接修改狀態，我們只能通過提交 mutation 來觸發 store 的變化。</p>
 <h3 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h3><p>我們以 socket 的方式來模擬一個聊天室</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">createWebSocketPlugin</span>(<span class="params">socket</span>) </span>{</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="params">store</span> =&gt;</span> {</span><br><span class="line">    <span class="comment">// 當 socket 收到新資料時</span></span><br><span class="line">    <span class="comment">// 假設有其他用戶發送新訊息</span></span><br><span class="line">    socket.on(<span class="string">'data'</span>, <span class="function"><span class="params">data</span> =&gt;</span> {</span><br><span class="line">      <span class="comment">// 同步數據到 store</span></span><br><span class="line">      <span class="comment">// 將新訊息放到 store 中</span></span><br><span class="line">      store.commit(<span class="string">'receiveData'</span>, data);</span><br><span class="line">    });</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 當我們做任何 store.commit 時，會觸發一下程式碼</span></span><br><span class="line">    <span class="comment">// 如發送訊息、回收訊息等</span></span><br><span class="line">    store.subscribe(<span class="function"><span class="params">mutation</span> =&gt;</span> {</span><br><span class="line">      <span class="comment">// 當我們想取消一個已經發送的訊息時</span></span><br><span class="line">      <span class="comment">// 檢查如果是 store.commit('deleteMessage)，則觸發一下動作</span></span><br><span class="line">      <span class="keyword">if</span> (mutation.type === <span class="string">'deleteMessage'</span>) {</span><br><span class="line">        <span class="comment">// 這是 socket 的行為，表示 socker 向後端發送出需要更新資料</span></span><br><span class="line">        <span class="comment">// 像後端發送需要刪除的訊息</span></span><br><span class="line">        socket.emit(<span class="string">'update'</span>, mutation.payload);</span><br><span class="line">      }</span><br><span class="line">    });</span><br><span class="line">  };</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">createWebSocketPlugin</span>(<span class="params">socket</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="params">store</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 當 socket 收到新資料時</span></span><br><span class="line">    <span class="comment">// 假設有其他用戶發送新訊息</span></span><br><span class="line">    socket.on(<span class="string">&#x27;data&#x27;</span>, <span class="function"><span class="params">data</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">// 同步數據到 store</span></span><br><span class="line">      <span class="comment">// 將新訊息放到 store 中</span></span><br><span class="line">      store.commit(<span class="string">&#x27;receiveData&#x27;</span>, data);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 當我們做任何 store.commit 時，會觸發一下程式碼</span></span><br><span class="line">    <span class="comment">// 如發送訊息、回收訊息等</span></span><br><span class="line">    store.subscribe(<span class="function"><span class="params">mutation</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">// 當我們想取消一個已經發送的訊息時</span></span><br><span class="line">      <span class="comment">// 檢查如果是 store.commit(&#x27;deleteMessage)，則觸發一下動作</span></span><br><span class="line">      <span class="keyword">if</span> (mutation.type === <span class="string">&#x27;deleteMessage&#x27;</span>) &#123;</span><br><span class="line">        <span class="comment">// 這是 socket 的行為，表示 socker 向後端發送出需要更新資料</span></span><br><span class="line">        <span class="comment">// 像後端發送需要刪除的訊息</span></span><br><span class="line">        socket.emit(<span class="string">&#x27;update&#x27;</span>, mutation.payload);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> plugin = createWebSocketPlugin(socket);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store({</span><br><span class="line">  <span class="attr">state</span>: {</span><br><span class="line">    <span class="attr">data</span>: {},</span><br><span class="line">  },</span><br><span class="line">  <span class="attr">mutations</span>: {</span><br><span class="line">    <span class="function"><span class="title">updateData</span>(<span class="params">data</span>)</span> {</span><br><span class="line">      state.data = data;</span><br><span class="line">    },</span><br><span class="line">  },</span><br><span class="line">  <span class="attr">plugins</span>: [plugin],</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> plugin = createWebSocketPlugin(socket);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  <span class="attr">state</span>: &#123;</span><br><span class="line">    <span class="attr">data</span>: &#123;&#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">mutations</span>: &#123;</span><br><span class="line">    <span class="function"><span class="title">updateData</span>(<span class="params">data</span>)</span> &#123;</span><br><span class="line">      state.data = data;</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">plugins</span>: [plugin],</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -359,7 +361,7 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Jeremy Su</p>
   <div class="site-description" itemprop="description">Full Stack Developer</div>
 </div>
@@ -388,10 +390,10 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/jeremysu0131" title="GitHub → https://github.com/jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/jeremysu0131" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://instagram.com/nomi_su" title="Instagram → https://instagram.com/nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+        <a href="https://instagram.com/nomi_su" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
       </span>
   </div>
 
@@ -415,14 +417,14 @@
 
 <div class="copyright">
   
-  © 2017 – 
+  &copy; 2017 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jeremy Su</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
   </div>
 
         
@@ -510,45 +512,40 @@
   </div>
 
   
-  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
 
 
+<script src="/js/schemes/muse.js"></script>
 
 
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
+<script src="/js/next-boot.js"></script>
 
 
 
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
+  
 
-
-
-
-
-<script src="/bundle.js"></script><script>
+<script>
   function loadCount() {
     var d = document, s = d.createElement('script');
     s.src = 'https://nomicoding.disqus.com/count.js';
@@ -557,8 +554,8 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
-;
-
+</script>
+<script>
   var disqus_config = function() {
     this.page.url = "https://jeremysu0131.github.io/Vue-js-Vuex-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-11-%E6%8F%92%E4%BB%B6/";
     this.page.identifier = "Vue-js-Vuex-學習筆記-11-插件/";
@@ -577,4 +574,7 @@
       (d.head || d.body).appendChild(s);
     }
   });
-</script></body></html>
+</script>
+
+</body>
+</html>

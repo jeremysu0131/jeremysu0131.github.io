@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -10,10 +12,10 @@
   <link rel="manifest" href="/images/manifest.json">
   <meta name="msapplication-config" content="/images/browserconfig.xml">
 
+<link rel="stylesheet" href="/css/main.css">
 
 
-
-
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -83,13 +85,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Nomi Su@Coding" type="application/atom+xml">
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');</script></head>
+</head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="container">
     <div class="headband"></div>
 
-    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar">
@@ -172,16 +174,16 @@
     
   
   
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://jeremysu0131.github.io/Javascript-%E5%B0%87%E5%90%AB%E6%9C%89%E6%96%9C%E6%9D%A0%E7%9A%84json%E8%BD%89%E6%8F%9B%E6%88%90%E7%89%A9%E4%BB%B6/">
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Jeremy Su">
       <meta itemprop="description" content="Full Stack Developer">
     </span>
 
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Nomi Su@Coding">
     </span>
       <header class="post-header">
@@ -210,7 +212,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/javascript/" itemprop="url" rel="index"><span itemprop="name">Javascript</span></a>
                 </span>
             </span>
@@ -250,13 +252,13 @@
         <h2 id="帶有斜杠的json"><a href="#帶有斜杠的json" class="headerlink" title="帶有斜杠的json"></a>帶有斜杠的json</h2><p>有時候我們在與其他人做API對接時，會發現有些json的格式會如下：</p>
 <span id="more"></span>
 
-<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">    <span class="attr">"item"</span>: <span class="string">"[{\"Authors\":[{\"NameID\":624,\"NameTypeID\":1,\"LastName\":\"Daans\",\"ForeName\":\"Melina\",\"Initials\":\"M\",\"DisplayName\":\"Daans, Melina\",\"SequenceNo\":0},{\"NameID\":625,\"NameTypeID\":1,\"LastName\":\"Lories\",\"ForeName\":\"Rik Ju\",\"Initials\":\"R J\",\"DisplayName\":\"Lories, Rik Ju\",\"SequenceNo\":1},{\"NameID\":626,\"NameTypeID\":1,\"LastName\":\"Luyten\",\"ForeName\":\"Frank P\",\"Initials\":\"F P\",\"DisplayName\":\"Luyten, Frank P\",\"SequenceNo\":2}],\"UserID\":\"813\",\"ItemID\":179,\"SequenceNo\":0,\"ItemTypeID\":4,\"FlagID\":0,\"Title\":\"Dynamic activation of bone morphogenetic protein signaling in collagen induced arthritis supports their role in joint homeostasis and disease.\",\"Title2\":\"Arthritis research &amp; therapy\",\"Author\":\"Daans, Melina|Lories, Rik Ju|Luyten, Frank P|\",\"Affiliation\":\"\",\"Edition\":\"\",\"Volume\":\"10\",\"Volume2\":\"5\"}]"</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;item&quot;</span>: <span class="string">&quot;[&#123;\&quot;Authors\&quot;:[&#123;\&quot;NameID\&quot;:624,\&quot;NameTypeID\&quot;:1,\&quot;LastName\&quot;:\&quot;Daans\&quot;,\&quot;ForeName\&quot;:\&quot;Melina\&quot;,\&quot;Initials\&quot;:\&quot;M\&quot;,\&quot;DisplayName\&quot;:\&quot;Daans, Melina\&quot;,\&quot;SequenceNo\&quot;:0&#125;,&#123;\&quot;NameID\&quot;:625,\&quot;NameTypeID\&quot;:1,\&quot;LastName\&quot;:\&quot;Lories\&quot;,\&quot;ForeName\&quot;:\&quot;Rik Ju\&quot;,\&quot;Initials\&quot;:\&quot;R J\&quot;,\&quot;DisplayName\&quot;:\&quot;Lories, Rik Ju\&quot;,\&quot;SequenceNo\&quot;:1&#125;,&#123;\&quot;NameID\&quot;:626,\&quot;NameTypeID\&quot;:1,\&quot;LastName\&quot;:\&quot;Luyten\&quot;,\&quot;ForeName\&quot;:\&quot;Frank P\&quot;,\&quot;Initials\&quot;:\&quot;F P\&quot;,\&quot;DisplayName\&quot;:\&quot;Luyten, Frank P\&quot;,\&quot;SequenceNo\&quot;:2&#125;],\&quot;UserID\&quot;:\&quot;813\&quot;,\&quot;ItemID\&quot;:179,\&quot;SequenceNo\&quot;:0,\&quot;ItemTypeID\&quot;:4,\&quot;FlagID\&quot;:0,\&quot;Title\&quot;:\&quot;Dynamic activation of bone morphogenetic protein signaling in collagen induced arthritis supports their role in joint homeostasis and disease.\&quot;,\&quot;Title2\&quot;:\&quot;Arthritis research &amp; therapy\&quot;,\&quot;Author\&quot;:\&quot;Daans, Melina|Lories, Rik Ju|Luyten, Frank P|\&quot;,\&quot;Affiliation\&quot;:\&quot;\&quot;,\&quot;Edition\&quot;:\&quot;\&quot;,\&quot;Volume\&quot;:\&quot;10\&quot;,\&quot;Volume2\&quot;:\&quot;5\&quot;&#125;]&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>其實<code>\"</code>這個是為了讓後面的引號<code>"</code>顯示出來，我們在<strong>解析時不需要特別去注意</strong>，使用<code>JSON.parse()</code>一樣可以進行轉換。</p>
+<p>其實<code>\&quot;</code>這個是為了讓後面的引號<code>&quot;</code>顯示出來，我們在<strong>解析時不需要特別去注意</strong>，使用<code>JSON.parse()</code>一樣可以進行轉換。</p>
 <h2 id="JSON-parse-介紹"><a href="#JSON-parse-介紹" class="headerlink" title="JSON.parse() 介紹"></a>JSON.parse() 介紹</h2><blockquote>
 <p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">JSON.parse()</a> 方法把會把一個JSON字串轉換成 JavaScript的數值或是物件。另外也可選擇使用reviver函數讓這些數值或是物件在被回傳之前做轉換。</p>
 </blockquote>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight javascript"><figcaption><span>Use JSON.parse() convert to object</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> jsonStr = <span class="string">`{\"LastName\":\"Daans\",\"ForeName\":\"Melina\",</span></span><br><span class="line"><span class="string">\"Initials\":\"M\",\"DisplayName\":\"Daans, Melina\"}`</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">JSON</span>.parse(jsonStr));</span><br><span class="line"><span class="comment">// { LastName: 'Daans', ForeName: 'Melina', Initials: 'M', DisplayName:</span></span><br><span class="line"><span class="comment">//  'Daans, Melina' }</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">JSON</span>.parse(jsonStr).LastName); <span class="comment">// Daans</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight javascript"><figcaption><span>Use JSON.parse() convert to object</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> jsonStr = <span class="string">`&#123;\&quot;LastName\&quot;:\&quot;Daans\&quot;,\&quot;ForeName\&quot;:\&quot;Melina\&quot;,</span></span><br><span class="line"><span class="string">\&quot;Initials\&quot;:\&quot;M\&quot;,\&quot;DisplayName\&quot;:\&quot;Daans, Melina\&quot;&#125;`</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">JSON</span>.parse(jsonStr));</span><br><span class="line"><span class="comment">// &#123; LastName: &#x27;Daans&#x27;, ForeName: &#x27;Melina&#x27;, Initials: &#x27;M&#x27;, DisplayName:</span></span><br><span class="line"><span class="comment">//  &#x27;Daans, Melina&#x27; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">JSON</span>.parse(jsonStr).LastName); <span class="comment">// Daans</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -353,7 +355,7 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Jeremy Su</p>
   <div class="site-description" itemprop="description">Full Stack Developer</div>
 </div>
@@ -382,10 +384,10 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/jeremysu0131" title="GitHub → https://github.com/jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/jeremysu0131" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://instagram.com/nomi_su" title="Instagram → https://instagram.com/nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+        <a href="https://instagram.com/nomi_su" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
       </span>
   </div>
 
@@ -409,14 +411,14 @@
 
 <div class="copyright">
   
-  © 2017 – 
+  &copy; 2017 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jeremy Su</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
   </div>
 
         
@@ -504,45 +506,40 @@
   </div>
 
   
-  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
 
 
+<script src="/js/schemes/muse.js"></script>
 
 
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
+<script src="/js/next-boot.js"></script>
 
 
 
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
+  
 
-
-
-
-
-<script src="/bundle.js"></script><script>
+<script>
   function loadCount() {
     var d = document, s = d.createElement('script');
     s.src = 'https://nomicoding.disqus.com/count.js';
@@ -551,8 +548,8 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
-;
-
+</script>
+<script>
   var disqus_config = function() {
     this.page.url = "https://jeremysu0131.github.io/Javascript-%E5%B0%87%E5%90%AB%E6%9C%89%E6%96%9C%E6%9D%A0%E7%9A%84json%E8%BD%89%E6%8F%9B%E6%88%90%E7%89%A9%E4%BB%B6/";
     this.page.identifier = "Javascript-將含有斜杠的json轉換成物件/";
@@ -571,4 +568,7 @@
       (d.head || d.body).appendChild(s);
     }
   });
-</script></body></html>
+</script>
+
+</body>
+</html>
