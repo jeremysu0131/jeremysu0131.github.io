@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -12,10 +10,10 @@
   <link rel="manifest" href="/images/manifest.json">
   <meta name="msapplication-config" content="/images/browserconfig.xml">
 
-<link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -83,13 +81,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Nomi Su@Coding" type="application/atom+xml">
-</head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');</script></head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body itemscope="" itemtype="http://schema.org/WebPage">
   <div class="container">
     <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar">
@@ -172,16 +170,16 @@
     
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://jeremysu0131.github.io/Vue-js-ESLint-%E5%BF%BD%E7%95%A5%E9%8C%AF%E8%AA%A4%E6%96%B9%E5%BC%8F/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Jeremy Su">
       <meta itemprop="description" content="Full Stack Developer">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Nomi Su@Coding">
     </span>
       <header class="post-header">
@@ -210,7 +208,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/vuejs/" itemprop="url" rel="index"><span itemprop="name">Vue.js</span></a>
                 </span>
             </span>
@@ -250,18 +248,18 @@
         <p>在使用 <code>vue-cli</code> 建立專案時，也會詢問是否要使用 <code>ESLint</code> ，基於開發時避免一些JS的較為特殊的錯誤，建議還是使用 <code>ESLint</code> 來規範程式碼。但是開發中總是會有比較特殊的需求 <code>ESLint</code> 是沒辦法符合的，所以這時我們要加入一些設定來忽略掉錯誤，以下使用程式碼來做教學。</p>
 <span id="more"></span>
 
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params">person</span>)</span>&#123;</span><br><span class="line">  person.name=<span class="string">&#x27;Jeremy&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params">person</span>)</span>{</span><br><span class="line">  person.name=<span class="string">'Jeremy'</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 <blockquote>
 <p>[eslint] Assignment to property of function parameter ‘to’. (no-param-reassign)</p>
 </blockquote>
 <p>當我們貼上上面的程式碼後會發現，ESLint會出現上述錯誤警告，告訴我們這個錯誤需要處理<a target="_blank" rel="noopener" href="https://eslint.org/docs/rules/no-param-reassign">（詳情請點擊）</a>，但我們仍然需要這樣做時，該怎麼辦？以下有3種方式可以處理。</p>
 <h2 id="1-在-eslintrc-js中禁用這項規則"><a href="#1-在-eslintrc-js中禁用這項規則" class="headerlink" title="1. 在.eslintrc.js中禁用這項規則"></a>1. 在<code>.eslintrc.js</code>中禁用這項規則</h2><p>打開 <code>.eslintrc.js</code> ，在 <code>rules</code> 內新增禁用規則</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rules: &#123;</span><br><span class="line">    <span class="comment">//...上略</span></span><br><span class="line">     <span class="string">&quot;no-param-reassign&quot;</span>: [<span class="number">2</span>, &#123; <span class="attr">props</span>: <span class="literal">false</span> &#125;]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rules: {</span><br><span class="line">    <span class="comment">//...上略</span></span><br><span class="line">     <span class="string">"no-param-reassign"</span>: [<span class="number">2</span>, { <span class="attr">props</span>: <span class="literal">false</span> }]</span><br><span class="line">  }</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="2-在整個function內禁用"><a href="#2-在整個function內禁用" class="headerlink" title="2. 在整個function內禁用"></a>2. 在整個<code>function</code>內禁用</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*eslint-disable no-param-reassign*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params">person</span>)</span>&#123;</span><br><span class="line">  person.name=<span class="string">&#x27;Jeremy&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*eslint-enable no-param-reassign*/</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-在整個function內禁用"><a href="#2-在整個function內禁用" class="headerlink" title="2. 在整個function內禁用"></a>2. 在整個<code>function</code>內禁用</h2><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*eslint-disable no-param-reassign*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params">person</span>)</span>{</span><br><span class="line">  person.name=<span class="string">'Jeremy'</span>;</span><br><span class="line">}</span><br><span class="line"><span class="comment">/*eslint-enable no-param-reassign*/</span></span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="3-禁用指定的程式碼"><a href="#3-禁用指定的程式碼" class="headerlink" title="3. 禁用指定的程式碼"></a>3. 禁用指定的程式碼</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params">person</span>)</span>&#123;</span><br><span class="line">  person.name=<span class="string">&#x27;Jeremy&#x27;</span>; <span class="comment">// eslint-disable-line no-param-reassign</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="3-禁用指定的程式碼"><a href="#3-禁用指定的程式碼" class="headerlink" title="3. 禁用指定的程式碼"></a>3. 禁用指定的程式碼</h2><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params">person</span>)</span>{</span><br><span class="line">  person.name=<span class="string">'Jeremy'</span>; <span class="comment">// eslint-disable-line no-param-reassign</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
     </div>
 
     
@@ -359,7 +357,7 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Jeremy Su</p>
   <div class="site-description" itemprop="description">Full Stack Developer</div>
 </div>
@@ -388,10 +386,10 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/jeremysu0131" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/jeremysu0131" title="GitHub → https://github.com/jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://instagram.com/nomi_su" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+        <a href="https://instagram.com/nomi_su" title="Instagram → https://instagram.com/nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
       </span>
   </div>
 
@@ -415,14 +413,14 @@
 
 <div class="copyright">
   
-  &copy; 2017 – 
+  © 2017 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jeremy Su</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
   </div>
 
         
@@ -510,15 +508,15 @@
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-
-<script src="/js/utils.js"></script>
+  
 
 
-<script src="/js/schemes/muse.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
+
+
+
+
 
 
 
@@ -543,7 +541,12 @@
 
   
 
-<script>
+
+
+
+
+
+<script src="/bundle.js"></script><script>
   function loadCount() {
     var d = document, s = d.createElement('script');
     s.src = 'https://nomicoding.disqus.com/count.js';
@@ -552,8 +555,8 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
-</script>
-<script>
+;
+
   var disqus_config = function() {
     this.page.url = "https://jeremysu0131.github.io/Vue-js-ESLint-%E5%BF%BD%E7%95%A5%E9%8C%AF%E8%AA%A4%E6%96%B9%E5%BC%8F/";
     this.page.identifier = "Vue-js-ESLint-忽略錯誤方式/";
@@ -572,7 +575,4 @@
       (d.head || d.body).appendChild(s);
     }
   });
-</script>
-
-</body>
-</html>
+</script></body></html>

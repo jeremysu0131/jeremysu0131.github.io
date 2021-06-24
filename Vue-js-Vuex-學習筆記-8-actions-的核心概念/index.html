@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -12,10 +10,10 @@
   <link rel="manifest" href="/images/manifest.json">
   <meta name="msapplication-config" content="/images/browserconfig.xml">
 
-<link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -89,13 +87,13 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Nomi Su@Coding" type="application/atom+xml">
-</head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('/style.css');</script></head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body itemscope="" itemtype="http://schema.org/WebPage">
   <div class="container">
     <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar">
@@ -178,16 +176,16 @@
     
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://jeremysu0131.github.io/Vue-js-Vuex-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-8-actions-%E7%9A%84%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Jeremy Su">
       <meta itemprop="description" content="Full Stack Developer">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Nomi Su@Coding">
     </span>
       <header class="post-header">
@@ -216,7 +214,7 @@
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/vuejs/" itemprop="url" rel="index"><span itemprop="name">Vue.js</span></a>
                 </span>
             </span>
@@ -261,38 +259,38 @@
 <li>Actions 可以包含任意異步操作。</li>
 </ul>
 <h2 id="使用-Actions"><a href="#使用-Actions" class="headerlink" title="使用 Actions"></a>使用 Actions</h2><p>我們這邊來註冊一個簡單的 action</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  <span class="attr">state</span>: &#123;</span><br><span class="line">    <span class="attr">count</span>: <span class="number">0</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">mutations</span>: &#123;</span><br><span class="line">    <span class="function"><span class="title">increment</span>(<span class="params">state</span>)</span> &#123;</span><br><span class="line">      state.count++;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">actions</span>: &#123;</span><br><span class="line">    <span class="function"><span class="title">increment</span>(<span class="params">context</span>)</span> &#123;</span><br><span class="line">      context.commit(<span class="string">&quot;increment&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store({</span><br><span class="line">  <span class="attr">state</span>: {</span><br><span class="line">    <span class="attr">count</span>: <span class="number">0</span></span><br><span class="line">  },</span><br><span class="line">  <span class="attr">mutations</span>: {</span><br><span class="line">    <span class="function"><span class="title">increment</span>(<span class="params">state</span>)</span> {</span><br><span class="line">      state.count++;</span><br><span class="line">    }</span><br><span class="line">  },</span><br><span class="line">  <span class="attr">actions</span>: {</span><br><span class="line">    <span class="function"><span class="title">increment</span>(<span class="params">context</span>)</span> {</span><br><span class="line">      context.commit(<span class="string">"increment"</span>);</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
 
 <p>Action 函數接受一個與 store 實例具有相同方法和屬性的 <code>context</code> 物件，因此你可以調用 <code>context.commit</code> 提交一個 mutation，或是透過 <code>context.state</code> 或 <code>context.getters</code> 來取得 state 和 getters 。下一章我們介紹 Modules 時，就會對 context 有更多介紹，到時就會知道 context 物件為什麼不是 store 實例本身了。</p>
 <h2 id="簡化程式碼"><a href="#簡化程式碼" class="headerlink" title="簡化程式碼"></a>簡化程式碼</h2><p>在實際情況中，我們常會使用 ES2015 中的 <a target="_blank" rel="noopener" href="https://github.com/lukehoban/es6features#destructuring"><strong>參數解構</strong></a> 來簡化程式碼：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">actions: &#123;</span><br><span class="line">  increment (&#123; commit &#125;) &#123;</span><br><span class="line">    commit(<span class="string">&#x27;increment&#x27;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">actions: {</span><br><span class="line">  increment ({ commit }) {</span><br><span class="line">    commit(<span class="string">'increment'</span>)</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="調用-Actions"><a href="#調用-Actions" class="headerlink" title="調用 Actions"></a>調用 Actions</h2><p>Action 透過 <code>store.dispatch</code> 方法觸發：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">store.dispatch(<span class="string">&quot;increment&quot;</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">store.dispatch(<span class="string">"increment"</span>);</span><br></pre></td></tr></tbody></table></figure>
 
 <p>這樣看起來跟 mutations 的用法差不多，但是我們要記得 <strong>mutations 必須是同步執行</strong>，而 actions 則可以<strong>異步執行</strong>。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">actions: &#123;</span><br><span class="line">  incrementAsync (&#123; commit &#125;) &#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      commit(<span class="string">&#x27;increment&#x27;</span>)</span><br><span class="line">    &#125;, <span class="number">1000</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">actions: {</span><br><span class="line">  incrementAsync ({ commit }) {</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> {</span><br><span class="line">      commit(<span class="string">'increment'</span>)</span><br><span class="line">    }, <span class="number">1000</span>)</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="Payload"><a href="#Payload" class="headerlink" title="Payload"></a>Payload</h2><p>actions 同樣可以使用 payload 或物件的形式：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 以 payload 形式分發</span></span><br><span class="line">store.dispatch(<span class="string">&quot;incrementAsync&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">amount</span>: <span class="number">10</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 以物件形式分發</span></span><br><span class="line">store.dispatch(&#123;</span><br><span class="line">  <span class="attr">type</span>: <span class="string">&quot;incrementAsync&quot;</span>,</span><br><span class="line">  <span class="attr">amount</span>: <span class="number">10</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 以 payload 形式分發</span></span><br><span class="line">store.dispatch(<span class="string">"incrementAsync"</span>, {</span><br><span class="line">  <span class="attr">amount</span>: <span class="number">10</span></span><br><span class="line">});</span><br><span class="line"></span><br><span class="line"><span class="comment">// 以物件形式分發</span></span><br><span class="line">store.dispatch({</span><br><span class="line">  <span class="attr">type</span>: <span class="string">"incrementAsync"</span>,</span><br><span class="line">  <span class="attr">amount</span>: <span class="number">10</span></span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
 
 <p>我們用一個更加實際的例子來<strong>調用異步 API</strong>與<strong>分發多重 mutations</strong>：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">actions: &#123;</span><br><span class="line">  checkout (&#123; commit, state &#125;, products) &#123;</span><br><span class="line">    <span class="comment">// 把當前購物車的物品備份起來</span></span><br><span class="line">    <span class="keyword">const</span> savedCartItems = [...state.cart.added]</span><br><span class="line">    <span class="comment">// 發出結賬請求，然後清空購物車</span></span><br><span class="line">    commit(types.CHECKOUT_REQUEST)</span><br><span class="line">    <span class="comment">// 購物API，接受一個成功和失敗回調</span></span><br><span class="line">    shop.buyProducts(</span><br><span class="line">      products,</span><br><span class="line">      <span class="comment">// 成功操作</span></span><br><span class="line">      <span class="function">() =&gt;</span> commit(types.CHECKOUT_SUCCESS),</span><br><span class="line">      <span class="comment">// 失敗操作</span></span><br><span class="line">      <span class="function">() =&gt;</span> commit(types.CHECKOUT_FAILURE, savedCartItems)</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">actions: {</span><br><span class="line">  checkout ({ commit, state }, products) {</span><br><span class="line">    <span class="comment">// 把當前購物車的物品備份起來</span></span><br><span class="line">    <span class="keyword">const</span> savedCartItems = [...state.cart.added]</span><br><span class="line">    <span class="comment">// 發出結賬請求，然後清空購物車</span></span><br><span class="line">    commit(types.CHECKOUT_REQUEST)</span><br><span class="line">    <span class="comment">// 購物API，接受一個成功和失敗回調</span></span><br><span class="line">    shop.buyProducts(</span><br><span class="line">      products,</span><br><span class="line">      <span class="comment">// 成功操作</span></span><br><span class="line">      <span class="function">() =&gt;</span> commit(types.CHECKOUT_SUCCESS),</span><br><span class="line">      <span class="comment">// 失敗操作</span></span><br><span class="line">      <span class="function">() =&gt;</span> commit(types.CHECKOUT_FAILURE, savedCartItems)</span><br><span class="line">    )</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 <p>上面的例子我們正在進行一系列的異步操作，並透過提交 mutations 來記錄 actions 產生的轉態變更。</p>
-<h2 id="mapActions"><a href="#mapActions" class="headerlink" title="mapActions"></a>mapActions</h2><p>我們可以在組件中使用 <code>this.$store.dispatch(&#39;xxx&#39;)</code> 分發 action，或者 使用 <code>mapActions</code> 輔助函數將組件的 methods 映射為 <code>store.dispatch</code> 調用。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; mapActions &#125; <span class="keyword">from</span> <span class="string">&quot;vuex&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">methods</span>: &#123;</span><br><span class="line">    ...mapActions([</span><br><span class="line">      <span class="string">&quot;increment&quot;</span>, <span class="comment">// 將 `this.increment()` 映射為 `this.$store.dispatch(&#x27;increment&#x27;)`</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">// `mapActions` 也支持载荷：</span></span><br><span class="line">      <span class="string">&quot;incrementBy&quot;</span> <span class="comment">// 將 `this.incrementBy(amount)` 映射為 `this.$store.dispatch(&#x27;incrementBy&#x27;, amount)`</span></span><br><span class="line">    ]),</span><br><span class="line">    ...mapActions(&#123;</span><br><span class="line">      <span class="attr">add</span>: <span class="string">&quot;increment&quot;</span> <span class="comment">// 將 `this.add()` 映射為 `this.$store.dispatch(&#x27;increment&#x27;)`</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="mapActions"><a href="#mapActions" class="headerlink" title="mapActions"></a>mapActions</h2><p>我們可以在組件中使用 <code>this.$store.dispatch('xxx')</code> 分發 action，或者 使用 <code>mapActions</code> 輔助函數將組件的 methods 映射為 <code>store.dispatch</code> 調用。</p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> { mapActions } <span class="keyword">from</span> <span class="string">"vuex"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> {</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">methods</span>: {</span><br><span class="line">    ...mapActions([</span><br><span class="line">      <span class="string">"increment"</span>, <span class="comment">// 將 `this.increment()` 映射為 `this.$store.dispatch('increment')`</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">// `mapActions` 也支持载荷：</span></span><br><span class="line">      <span class="string">"incrementBy"</span> <span class="comment">// 將 `this.incrementBy(amount)` 映射為 `this.$store.dispatch('incrementBy', amount)`</span></span><br><span class="line">    ]),</span><br><span class="line">    ...mapActions({</span><br><span class="line">      <span class="attr">add</span>: <span class="string">"increment"</span> <span class="comment">// 將 `this.add()` 映射為 `this.$store.dispatch('increment')`</span></span><br><span class="line">    })</span><br><span class="line">  }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="組合-actions"><a href="#組合-actions" class="headerlink" title="組合 actions"></a>組合 actions</h2><p>actions 通常是異步的，那我們如何知道 Action 什麼時候結束呢？更重要的是，我們如何才能組合多個 action ，來處理更加複雜的異步流程？</p>
 <p>首先我們需要先明白，當一個 action 返回 <strong><code>Promise</code></strong> 時，<code>store.dispatch</code> 可以處理返回（return）的 <strong><code>Promise</code></strong> ：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">actions: &#123;</span><br><span class="line">  actionA (&#123; commit &#125;) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">        commit(<span class="string">&#x27;someMutation&#x27;</span>)</span><br><span class="line">        resolve()</span><br><span class="line">      &#125;, <span class="number">1000</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">actions: {</span><br><span class="line">  actionA ({ commit }) {</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> {</span><br><span class="line">      <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> {</span><br><span class="line">        commit(<span class="string">'someMutation'</span>)</span><br><span class="line">        resolve()</span><br><span class="line">      }, <span class="number">1000</span>)</span><br><span class="line">    })</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">store.dispatch(<span class="string">&quot;actionA&quot;</span>).then(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">store.dispatch(<span class="string">"actionA"</span>).then(<span class="function">() =&gt;</span> {</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
 
 <p>在其他 action 中也可以這樣使用：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">actions: &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  actionB (&#123; dispatch, commit &#125;) &#123;</span><br><span class="line">    <span class="keyword">return</span> dispatch(<span class="string">&#x27;actionA&#x27;</span>).then(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      commit(<span class="string">&#x27;someOtherMutation&#x27;</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">actions: {</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  actionB ({ dispatch, commit }) {</span><br><span class="line">    <span class="keyword">return</span> dispatch(<span class="string">'actionA'</span>).then(<span class="function">() =&gt;</span> {</span><br><span class="line">      commit(<span class="string">'someOtherMutation'</span>)</span><br><span class="line">    })</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="在-actions-中使用-async-await"><a href="#在-actions-中使用-async-await" class="headerlink" title="在 actions 中使用 async / await"></a>在 actions 中使用 async / await</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 假設 getData() 和 getOtherData() 返回的是 Promise</span></span><br><span class="line"></span><br><span class="line"><span class="attr">actions</span>: &#123;</span><br><span class="line">  <span class="keyword">async</span> actionA (&#123; commit &#125;) &#123;</span><br><span class="line">    commit(<span class="string">&#x27;gotData&#x27;</span>, <span class="keyword">await</span> getData())</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="keyword">async</span> actionB (&#123; dispatch, commit &#125;) &#123;</span><br><span class="line">    <span class="keyword">await</span> dispatch(<span class="string">&#x27;actionA&#x27;</span>) <span class="comment">// 等待 actionA 完成</span></span><br><span class="line">    commit(<span class="string">&#x27;gotOtherData&#x27;</span>, <span class="keyword">await</span> getOtherData())</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="在-actions-中使用-async-await"><a href="#在-actions-中使用-async-await" class="headerlink" title="在 actions 中使用 async / await"></a>在 actions 中使用 async / await</h2><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 假設 getData() 和 getOtherData() 返回的是 Promise</span></span><br><span class="line"></span><br><span class="line"><span class="attr">actions</span>: {</span><br><span class="line">  <span class="keyword">async</span> actionA ({ commit }) {</span><br><span class="line">    commit(<span class="string">'gotData'</span>, <span class="keyword">await</span> getData())</span><br><span class="line">  },</span><br><span class="line">  <span class="keyword">async</span> actionB ({ dispatch, commit }) {</span><br><span class="line">    <span class="keyword">await</span> dispatch(<span class="string">'actionA'</span>) <span class="comment">// 等待 actionA 完成</span></span><br><span class="line">    commit(<span class="string">'gotOtherData'</span>, <span class="keyword">await</span> getOtherData())</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 <blockquote>
 <p>一個 store.dispatch 在不同模塊中可以觸發多個 action 函數。在這種情況下，只有當所有觸發函數完成後，返回的 Promise 才會執行。</p>
@@ -396,12 +394,12 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Actions"><span class="nav-number">1.</span> <span class="nav-text">Actions</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-Actions"><span class="nav-number">1.1.</span> <span class="nav-text">使用 Actions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E5%8C%96%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="nav-number">1.2.</span> <span class="nav-text">簡化程式碼</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AA%BF%E7%94%A8-Actions"><span class="nav-number">1.3.</span> <span class="nav-text">調用 Actions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Payload"><span class="nav-number">1.4.</span> <span class="nav-text">Payload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mapActions"><span class="nav-number">1.5.</span> <span class="nav-text">mapActions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%84%E5%90%88-actions"><span class="nav-number">1.6.</span> <span class="nav-text">組合 actions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8-actions-%E4%B8%AD%E4%BD%BF%E7%94%A8-async-await"><span class="nav-number">1.7.</span> <span class="nav-text">在 actions 中使用 async &#x2F; await</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Actions"><span class="nav-number">1.</span> <span class="nav-text">Actions</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-Actions"><span class="nav-number">1.1.</span> <span class="nav-text">使用 Actions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E5%8C%96%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="nav-number">1.2.</span> <span class="nav-text">簡化程式碼</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AA%BF%E7%94%A8-Actions"><span class="nav-number">1.3.</span> <span class="nav-text">調用 Actions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Payload"><span class="nav-number">1.4.</span> <span class="nav-text">Payload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mapActions"><span class="nav-number">1.5.</span> <span class="nav-text">mapActions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%84%E5%90%88-actions"><span class="nav-number">1.6.</span> <span class="nav-text">組合 actions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8-actions-%E4%B8%AD%E4%BD%BF%E7%94%A8-async-await"><span class="nav-number">1.7.</span> <span class="nav-text">在 actions 中使用 async / await</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Jeremy Su</p>
   <div class="site-description" itemprop="description">Full Stack Developer</div>
 </div>
@@ -430,10 +428,10 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/jeremysu0131" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/jeremysu0131" title="GitHub → https://github.com/jeremysu0131" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://instagram.com/nomi_su" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+        <a href="https://instagram.com/nomi_su" title="Instagram → https://instagram.com/nomi_su" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
       </span>
   </div>
 
@@ -457,14 +455,14 @@
 
 <div class="copyright">
   
-  &copy; 2017 – 
+  © 2017 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jeremy Su</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
   </div>
 
         
@@ -552,15 +550,15 @@
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-
-<script src="/js/utils.js"></script>
+  
 
 
-<script src="/js/schemes/muse.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
+
+
+
+
 
 
 
@@ -585,7 +583,12 @@
 
   
 
-<script>
+
+
+
+
+
+<script src="/bundle.js"></script><script>
   function loadCount() {
     var d = document, s = d.createElement('script');
     s.src = 'https://nomicoding.disqus.com/count.js';
@@ -594,8 +597,8 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
-</script>
-<script>
+;
+
   var disqus_config = function() {
     this.page.url = "https://jeremysu0131.github.io/Vue-js-Vuex-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-8-actions-%E7%9A%84%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/";
     this.page.identifier = "Vue-js-Vuex-學習筆記-8-actions-的核心概念/";
@@ -614,7 +617,4 @@
       (d.head || d.body).appendChild(s);
     }
   });
-</script>
-
-</body>
-</html>
+</script></body></html>
