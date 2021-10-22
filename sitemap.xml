@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jeremysu0131.github.io/Vim-%E6%90%9C%E5%B0%8B%E4%B8%A6%E5%88%AA%E9%99%A4/</loc>
+    
+    <lastmod>2021-10-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jeremysu0131.github.io/tags/index.html</loc>
     
     <lastmod>2021-06-24</lastmod>
@@ -9,14 +16,14 @@
   </url>
   
   <url>
-    <loc>https://jeremysu0131.github.io/search/index.html</loc>
+    <loc>https://jeremysu0131.github.io/categories/index.html</loc>
     
     <lastmod>2021-06-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jeremysu0131.github.io/categories/index.html</loc>
+    <loc>https://jeremysu0131.github.io/search/index.html</loc>
     
     <lastmod>2021-06-24</lastmod>
     
@@ -163,14 +170,14 @@
   </url>
   
   <url>
-    <loc>https://jeremysu0131.github.io/Vue-js-Vuex-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-12-%E5%9A%B4%E6%A0%BC%E6%A8%A1%E5%BC%8F/</loc>
+    <loc>https://jeremysu0131.github.io/Vue-js-Vuex-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-13-%E8%A1%A8%E5%96%AE%E8%99%95%E7%90%86/</loc>
     
     <lastmod>2021-06-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jeremysu0131.github.io/Vue-js-Vuex-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-13-%E8%A1%A8%E5%96%AE%E8%99%95%E7%90%86/</loc>
+    <loc>https://jeremysu0131.github.io/Vue-js-Vuex-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-12-%E5%9A%B4%E6%A0%BC%E6%A8%A1%E5%BC%8F/</loc>
     
     <lastmod>2021-06-24</lastmod>
     
@@ -326,7 +333,7 @@
 
   <url>
     <loc>https://jeremysu0131.github.io/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -334,595 +341,595 @@
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Docker/</loc>
-    <lastmod>2021-06-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jeremysu0131.github.io/tags/VS-Code/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Node-js/</loc>
-    <lastmod>2021-06-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jeremysu0131.github.io/tags/ESLint/</loc>
-    <lastmod>2021-06-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jeremysu0131.github.io/tags/Mocha/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Docker-Image/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremysu0131.github.io/tags/ESLint/</loc>
+    <lastmod>2021-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremysu0131.github.io/tags/Mocha/</loc>
+    <lastmod>2021-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremysu0131.github.io/tags/VS-Code/</loc>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/JavaScript/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/upload/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/image/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/string/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/empty/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/undefined/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/javascript/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/api/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/slashe/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/json/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/object/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/JSON-parse/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/MySQL/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/log/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/test/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/nightwatch/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Javascript/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Promise/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/ES6/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Asynchronous/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/SMTP/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Postman/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/CryptoJS/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Base64/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/MD5/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/tool/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/load-test/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Mac/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/iTerm-2/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Zsh/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Oh-My-Zsh/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Powerlevel9k/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/putty/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/pscp/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/windows/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/linux/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/VMWare/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/net/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/ip/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/CentOS/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Vue/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Vue-js/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/vue-cli/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Vuex/</loc>
-    <lastmod>2021-06-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jeremysu0131.github.io/tags/structure/</loc>
-    <lastmod>2021-06-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jeremysu0131.github.io/tags/modules/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/plugins/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremysu0131.github.io/tags/structure/</loc>
+    <lastmod>2021-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremysu0131.github.io/tags/modules/</loc>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/strict/</loc>
-    <lastmod>2021-06-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jeremysu0131.github.io/tags/strict-mode/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/strict-model/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/form/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/v-model/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/setter/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremysu0131.github.io/tags/strict-mode/</loc>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/shopping-cart/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/component/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/module/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/login/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/plugin/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/devTool/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/cheat-sheet/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/state/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/mapState/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/getters/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/mapGetters/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/mutations/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/mapMutations/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/actions/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/mapActions/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/async/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/await/</loc>
-    <lastmod>2021-06-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jeremysu0131.github.io/tags/watch/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/Webpack/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/babel-polyfill/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/axios/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeremysu0131.github.io/tags/watch/</loc>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/props/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/components/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/parent/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/child/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/tags/communication/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -931,84 +938,84 @@
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/Docker/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/ESLint/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/javascript/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/mysql/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/Nightwatch/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/nodejs/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/Postman/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/Test-Tool/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/Tools/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/Tool/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/vuejs/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://jeremysu0131.github.io/categories/frontend/</loc>
-    <lastmod>2021-06-24</lastmod>
+    <lastmod>2021-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
